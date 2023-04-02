@@ -1,0 +1,111 @@
+:root {
+  --cor0: #000000; 
+  --cor1: #FFEE10; 
+  --cor2: #00FF99;
+  --cor3: #8A2BE2;
+  --cor4: #CCFF99; 
+  --cor5: #f1bf51; 
+  --cor6: #CCFF00; 
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: var(--fonte-padrao);
+}
+
+header {
+  background-color: var(--cor1);
+  padding: 1.0em;
+  color: var(--cor0);
+  text-align: center;
+}
+
+nav {
+  background-color: var(--cor2);
+  padding: 1.0em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30em;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+article {
+  background-color: var(--cor3);
+  color: var(--cor5);
+  padding: 1.0em;
+}
+
+aside {
+  display: inline-block;
+  width: 45%; /* ajuste a largura conforme necessário */
+  margin-right: 10px; /* margem entre os elementos */
+}
+
+.aside-1 {
+  background-color: var(--cor6);
+  color: var(#000000);
+  text-align: center;
+  padding: 1.0em;
+  
+}
+
+.aside-2 {
+  background-color: var(--cor4);
+  color: var(--cor0);
+  text-align: center;
+  padding: 1.0em;
+}
+
+.aside:last-child {
+  margin-right: 0;
+}
+
+footer {
+  background-color: var(--cor2);
+  color: var(--cor0);
+  text-align: center;
+  padding: 1.0em;
+}
+
+@media screen and (max-width:480){
+  body{
+    max-width: 480px;
+    font-size: 1.0em;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+    margin: 0.5em auto;
+  }
+
+  .aside-1, .aside-2 {
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 0.5em;
+  }
+
+}

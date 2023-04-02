@@ -72,7 +72,7 @@ footer {
   padding: 1.0em;
 }
 
-@media screen and (max-width:480){
+@media screen and (max-width:480px){
 .wrapper nav ul {
   flex-direction: column;
 }
